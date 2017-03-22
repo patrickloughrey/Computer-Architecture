@@ -8,9 +8,11 @@ int main(int argc, char **argv)
       exit(0);
     }
 
-    /* Converts command line argument from character to an integer */
-    int num = atoi(argv[1]);
+    int num = 0;
     int i = 0;
+
+    /* Converts command line argument from character to an integer */
+    num = atoi(argv[1]);
 
     for(i = 2; i < num; i++) {
 
