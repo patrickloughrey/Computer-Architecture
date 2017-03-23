@@ -40,5 +40,22 @@ int main(int argc, char **argv)
         }
     }
 
+    /* If file pointer did not reach the end of file, an error occurred */
+    if(!feof(fp)) {
+      printf("There was an error with the format or type of file..\n");
+      exit(0);
+    }
+
+    while(head != null) {
+      printf("%d\t", head->x);
+      head = head->next;
+
+    }
+
+    printf("\n");
+    fclose(fp);
+    free(head);
+
+    return 0;
     
 }
